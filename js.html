@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: linear-gradient(to left, #161b3e53, #ffb30062);
+        }
+    </style>
+    <script src="javaScript.js" ></script>
+</head>
+
+<body>
+    <header>
+    <h1>JavaScript</h1>
+    <nav>
+        <a class="nave" href="index.html" target="_blank">INDICE</a><br>
+        <a class="nave" href="css.html" target="_blank">CSS</a>
+        <a class="nave" href="html.html" target="_blank">HTML</a>
+        <a class="nave" href="git.html" target="_blank">Git y Github</a>
+
+    </nav>
+</header>
+<nav>
+    
+        <a class="subindice" href="#adquirir">Adq elementos de html</a>
+        <a class="subindice" href="#arrays">Arrays</a>
+        <a class="subindice" href="#condicionales">Condicionales</a>
+        <a class="subindice" href="#operadores">Operadores</a>
+        <a class="subindice" href="#blucles">Blucles</a>
+        <a class="subindice" href=""></a>
+        <a class="subindice" href=""></a>
+    
+</nav>
+
+    <p><b class="comenta">Comentar: </b> Por linea // , por parrafos /* */</p> <br>
+    <hr>
+    <p><b>AGREGAR SCRIPT A HTML</b><br>
+        script src="eventos.js">/script .. / . Ponemos la etiqueta script con el nombre del archivo js dentro de head o
+        body segun cuando queramos que se ejecute</script>
+    </p>
+    <hr>
+    <p>JavaScript es sensible a Mayusculas y caracteres, las variables siempre comienzan en minuscula y luego en
+        mayusculas</p><br>
+
+
+    <ul>
+        <p> <b>Variables</b> Pueden contener "texto", numeros, etiquetas(acciones) etc
+            <li><span>var :</span> Pueden ser modificadas y redeclaradas <span style="color: green; font-size: 23px;">
+                    &#10003; &#10003;</span></li>
+            <li><span>let :</span> Pueden ser modificadas pero no redeclaradas <span
+                    style="color: green; font-size: 20px;">&#10003;</span> <span
+                    style="color: red; font-size: 16px;">&#10060; </span></li>
+            <li><span>const :</span> NO pueden ser modificadas ni redeclaradas </span> <span
+                    style="color: red; font-size: 16px;">&#10060; &#10060; </span></li>
+            <li>Se abren con corchete y al final se pone; si colocamos varios valores las separamos con , </li>
+    </ul>
+    </p>
+    <hr>
+    <p><b id="adquirir">Adquirir los elementos de html</b><br> Como en css, debemos colocal un id o class en html a lo que deseamos
+        manipular <br>
+        <br>
+        <br>
+    </p>
+    <ol>
+
+
+        <li>elemento/variable = <b>document.getElementById</b>(id/nombreEnHtml); Devuelve una referencia al elemento por
+            su id </li>
+        En js creamos una variable, con document.getElementById (documento obtener elemento por
+        Identificación) traemos el id asignado en html <br><br>
+
+        <li>document.<b>addEventlistener</b> (agregar detector de eventos)= Es un escuchador que indica al navegador que
+            este atento a la interacción del
+            usuario
+            document.addEventListener('tipo de evento',función); se le indica como quiere ser escuchado y que funcion
+            realizar al escucharse <br>
+            document es el documento con el id que guarde en una variable
+            <ul class="letrasPequenas"> <b>Tipo de eventos</b>
+                <li><b>blur</b> Cuando el elemento pierde el foco.</li>
+                <li><b>click </b>El usuario hace clic sobre el elemento.</li>
+                <li><b>dblclick </b> El usuario hace doble clic sobre el elemento.</li>
+                <li><b>focus</b> El elemento gana el foco.</li>
+                <li><b>keydown</b> El usuario presiona una tecla.</li>
+                <li><b>keypress</b> El usuario presiona una tecla y la mantiene pulsada.</li>
+                <li><b>keyup </b> El usuario libera la tecla.</li>
+                <li><b>load</b> El documento termina su carga.</li>
+                <li><b>mousedown</b> El usuario presiona el botón del ratón en un elemento.</li>
+                <li><b>mousemove</b> El usuario mueve el puntero del ratón sobre un elemento.</li>
+                <li><b>mouseout</b> El usuario mueve el puntero fuera de un elemento.</li>
+                <li><b>mouseover</b> El usuario mantiene el puntero sobre un elemento.</li>
+                <li><b>mouseup</b> El usuario libera el botón pulsado del ratón sobre un elemento.</li>
+                <li><b>unload</b> El documento se descarga, bien porque se cierra la ventana, bien porque se navega a
+                    otra página.</li>
+            </ul>
+        <li>canvas<b>.getContext</b>(contextType, contextAttributes); ./ retorna un contexto de dibujo en el lienzo <br>
+            Creamos una variable en la que gardamos la variable en la que traimos el id, le asignamos en getContext/
+            contexto ( <b> "2d"</b>)</li>
+        <img src="imagenes/context.jpg" alt="contextos">
+        <li><b></b></li>
+        <li><b></b></li>
+        </ul>
+        <p><b>EJEMPLOS</b><br>
+            var teclas = { ../ Las teclas del teclado tienen un numero, las ponemos llamar con su nombre y su respectivo
+            numero<br>
+            UP: 38,<br>
+            DOWN: 40,<br>
+            LEFT: 37,<br>
+            RIGHT: 39 <br>
+            };
+        </p>
+        <hr>
+
+        <p><b id="arrays">ARRAYS y ejemplos</b> <br>
+
+        <p class="letrasPequenas">Creamos una variable, donde le asignamos <b>new Array()</b> vacio <br>
+            O en vez de new array colocamos = <b>[ ];</b> <br>
+            Para agregar contenido llamamos la variable usamos <b>.push</b>("nuevoContenido") push(empujar) <br> <br>
+            ejm 1 const ciudadesDisponibles = new Array();AGREGAMOS CON UN CORCHETE <br>
+            ejm 2 const ciudadesMasVendidas =[ ];<br>
+            ciudadesDisponibles.push("Bogota"); <br>
+            ciudadesDisponibles.push("Quito"); <br>
+            ciudadesDisponibles.push("Lima"); <br>
+            console.log(ciudadesDisponibles);</p>
+            <p><b>METODOS de array</b><br>
+                <img src="imagenes/metodos.png" alt=""> pequeña explicacion: <a target="_blank" href="https://www.pinterest.es/pin/468022586291963210/">video</a></p>
+                <img src="imagenes/js.jpg" alt="ejemplos de js">
+
+        </p>
+        <p class="letrasPequenas"><b>Conocer la Cantidad de la lista</b><br>
+            console.log(ciudadesDisponibles[2]); Aparecera Lima, la posicion inicial es 0 <br></p>
+        
+        <p class="letrasPequenas"><b>Conocer la Posicion en la lista</b><br>
+            const cantidadCiudades = ciudadesDisponibles.length;    /. .length(longitud) <br>
+            console.log(`Tenemos ${cantidadCiudades} ciudades disponibles`); Aparecera Tenemos 3 ciudades disponibles <br></p>
+        <br></p>
+        <hr>
+       <p> <b id="condicionales">CONDICIONALES</b>
+        <br>
+            <ul>
+                <li><b>if</b> para especificar un bloque de código que se ejecutará, si una condición especificada es verdadera</li>
+                <li><b>else</b> para especificar un bloque de código que se ejecutará, si la misma condición es falsa (es como un SI NO has esto)</li>
+                <li><b>else if</b> para especificar una nueva condición para probar, si la primera condición es falsa</li>
+                <li><b>switch</b></li>para especificar muchos bloques alternativos de código que se ejecutarán.
+            </ul>
+            <dl><b>if</b>
+                <dt> para especificar un bloque de código JavaScript que se ejecutará si una condición es verdadera.
+                    
+                        <dd>Sintaxis <br>
+                            if (condition) { <br>
+                              //  bloque de código que se ejecutará si la condición es verdadera
+                            }</dd>
+                    
+                </dt>
+            </dl>
+            <dl><b>else</b>
+                <dt> para especificar un bloque de código que se ejecutará si la condición es falsa.
+                    
+                        <dd>if (condition) { <br>
+                            //  bloque de código que se ejecutará si la condición es verdadera} <br>
+                         else { <br>
+                            //  bloque de código que se ejecutará si la condición es falsa
+                        }</dd>
+                    
+                </dt>
+            </dl>
+            <dl><b>else if</b>
+                <dt>para especificar una nueva condición si la primera condición es falsa.
+                    
+                        <dd>if (condition1) { <br>
+                            bloque de código que se ejecutará si la condición 1 es verdadera } <br> 
+                            else if (condition2) { <br>
+                            bloque de código que se ejecutará si la condición1 es falsa y la condición2 es verdadera }<br> 
+                            else {
+                                bloque de código que se ejecutará si la condición1 es falsa y la condición2 es falsa  }</dd>
+                    
+                </dt>
+            </dl>
+            <dl><b></b>
+                <dt>
+                    
+                        <dd></dd>
+                    
+                </dt>
+            </dl>
+        </br>
+       </p>
+       <hr>
+        <p><b id="operadores">OPERADORES</b><br>
+            <dl>
+                <dl><b>O=||</b>
+                    <dd>  ejemplo if (edadComprador >= 18 || estaAcompañado)
+                    </dd>
+                </dl>
+            </dl>
+            <dl>
+                <dl> <b>Y=&&</b>
+                    <dd class="letrasPequenas" >if (tienePasaje && (edadComprador >= 18) || estaAcompañado){ <br>
+                        console.log("Comprador con pasaje. Feliz viaje"); <br>
+                      } <br>
+                      else { <br>
+                        console.log("Comprador sin pasaje. No es posible hacer el embarque"): <br>
+                      }
+                      </dd>
+                </dl>
+            </dl>
+             
+        </p>
+        <hr>
+        <p><b id="blucles">BUCLES / CICLOS</b> <a href="https://es.javascript.info/while-for"> explicacion</a>
+        <ul>
+            <li><b>for</b> por <br>
+                <dl>ciclo for se repite hasta que una condición especificada se evalúe como false
+                    <dt> for ([expresiónInicial]; [expresiónCondicional]; <br> [expresiónDeActualización])
+                        instrucción
+                        <dd>for (let i = 0; i < 3; i++) { // muestra 0, luego 1, luego 2 <br>
+                            alert(i);
+                          }</dd>
+                    </dt>
+                </dl>
+            </li>
+            <li><b>do while</b> hacer mientras <br>
+            <dl>El bucle primero ejecuta el cuerpo, luego comprueba la condición, y, mientras sea un valor verdadero, la ejecuta una y otra vez.
+                <dt>do { <br>
+                    // cuerpo del bucle <br>
+                  } while (condition);
+                    <dd>En el siguiente ejemplo, el bucle do itera al menos una vez y se repite hasta que i ya no sea menor que 5. <br>
+                        let i = 0; do { i += 1; console.log(i); } while (i < 5);   otro ejemplo <br>
+                        let i = 0; <br>
+                        do {<br>
+                          alert( i );<br>
+                          i++;<br>
+                        } while (i < 3);</dd>
+                </dt>
+            </dl></li>
+            <li><b>while</b> mientras <br>
+            <dl>Una declaración while ejecuta sus instrucciones siempre que una condición especificada se evalúe como true. Una instrucción while tiene el siguiente aspecto: <br>
+                <dt>while (condición) <br>
+                    expresión <br>
+                    Si la condición se vuelve false, la instrucción dentro del bucle se deja de ejecutar y el control pasa a la instrucción que sigue al bucle.
+                    <br>
+                        <dd>ejemplo 1 <br>
+                            let n = 0;<br>
+                            let x = 0; <br>
+                            while (n < 3) { <br>
+                              n++;<br>
+                              x += n;} <br>
+                            </dd>
+                            <dd>ejemplo 2 <br>
+                                let i = 0; <br>
+                                while (i < 3) { // muestra 0, luego 1, luego 2 <br>
+                                  alert( i ); <br>
+                                  i++; <br>
+                                }</dd>
+                                <dd> <b>Las llaves no son requeridas para un cuerpo de una sola línea</b> <br>
+                                    Si el cuerpo del bucle tiene una sola sentencia, podemos omitir las llaves {…} <br>
+                                    let i = 3;<br>
+                                    while (i) alert(i--);</dd>
+                    
+                </dt>
+            </dl></li>
+            <li><b>labeled </b> etiquetado</li>
+            <li><b>break</b></li>
+            <li><b>continue</b></li>
+            <li><b>for in</b></li>
+            <li><b>for of</b></li>
+        </ul></p>
+        <img src="imagenes/operadores.jpg">
+        
+  <footer><strong>Trucos</strong>
+    <ul>
+        <li><b>Hora</b> <br>
+        Aplasta en el cuadro y aparecera tu hora  <button onclick="mostrar()" id="hora" width="30px" height="30px">hora</button> <br>
+        <p class="letrasPequenas" > en el boton de html ponemos onclick="funcion/mostrar" el nombre de la funcion de javascript que queremos que se ejecute <br>
+           <img src="imagenes/hora.jpg" alt="funcion de la hora"></p>
+     </li> 
+    </ul>
+</footer>      
+        
+ 
+</body>
+
+</html>

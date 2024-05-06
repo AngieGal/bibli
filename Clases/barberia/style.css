@@ -1,0 +1,246 @@
+  body{
+    font-family: 'Montserrat', sans-serif;
+  }
+  header {
+    background-color: #BBBBBB;
+    padding: 20px;
+  }
+  .caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  nav{ 
+    position: absolute;
+    top: 100px;
+    right: 0;
+  }
+
+  nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+  }
+  
+  nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+  }
+
+  nav a:hover{
+    color: #c78c19;
+    text-decoration:underline ;
+  } 
+
+  .productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  .productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+  }
+  .productos li:hover{
+    border-color: #c78c19;
+    
+  } 
+  .productos li:active{
+      border-color: #088c19;
+  }
+
+  .productos h2{
+    font-size: 30px;
+    font-weight: bold; 
+  }
+  
+  .productos li:hover h2{
+    font-size: 33px;
+  }
+  .producto-descripcion{
+    font-size: 18px;
+  }
+  .producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  footer{
+    text-align: center;
+    background: url(pie.png);
+    padding: 40px;
+  }
+ .copy{
+  color:#BBBBBB;
+  font-size: 13px;
+  margin: 20px;
+ }
+
+
+form{
+  margin: 40px 0px;
+}
+
+ form label, form legend{
+  display : block;
+  font-size: 20px;
+  margin: 0 0 10px;
+ }
+ 
+.input-padron{
+  display: block;
+  margin: 0 0 20px; /*alinear una div al centro*/
+  padding: 10px 25px;
+  width: 50%;
+}
+.checkbox{
+ margin: 20px 0px;
+}
+.enviar{
+  width: 40%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight:bold;
+  color:white;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+.enviar:hover{
+  background: darkorange ;
+  transform: scale(1.2);
+}
+table{
+  margin: 40px 40px;
+}
+thead{
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+td, th{
+  border: 1px solid black; 
+  padding: 8px 15px;
+}
+
+.barberia{
+  width: 100%;/*  anchura*/
+}
+
+.principal{
+  padding: 3em 0;
+  background: #FEFEFE;
+  width: 940px;
+  margin: 0 auto;
+}
+.tituloPrincipal{
+  text-align: center; /* alineamiento de tecto*/
+  font-size: 2em; /*em= dos veces ese tamaño*/
+  margin:0 0 1em ;/*arriba abajo tama;o*/
+  clear:left;/*cualquier informacion que venga desde la izquierda que la limpie/ no altera pero le decimos que la imagen solo afecte a este bloque(brocha)*/
+  /*color:rgba(0,0,0,3); agregar opacidad*/
+}
+
+
+
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal strong{
+  font-weight: bold;/*peso de la fuente*/
+}
+.principal em{
+  font-style: italic;
+}
+.utensilios{
+  width: 120px;/*que la imagen tenga este tama;o*/
+  float: left;/*que fote a posicion izquierda SUPER POSICION*/
+  margin: 0 20px 20px 0 ;/*arriba, derecha, abajo y izquierda MARCO DE ESPACIO DE LA IMAGEN CON EL ALREDDOR*/
+
+}
+
+.mapa{
+  padding: 3em 0;/*tres veces el tama;o de la fuente que esta configurado*/
+  background: linear-gradient(#FEFEFE, #888888);
+}
+.mapa p{
+  margin: 0 0 2em;/*margen del texto*/
+  text-align: center;/*CENTRAR TEXTO*/
+}
+.mapaContenido{
+width: 940px;
+margin: 0 auto ;
+}
+
+
+.difenciales{
+  padding: 3em 0;
+  background: #888888;
+}
+
+.contenidoDiferenciales{
+  width: 640px;
+  margin: 0 auto;/*arriba y abajo y automatico laterales*/
+}
+.listaDiferenciales{
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.items{
+  line-height: 1.5;/*linea altura: 1 + 50 % del tama;o padron de la fuente*/
+}
+
+.items.before{
+  content: "★";/*se supone que saldran las estrellas*/
+}
+.items:first-child{/*al primer elemento de ese bloque*/
+font-weight: bold;/*pintalo de negro*/
+
+}
+.imagenDiferencial{
+  width: 60%; /*anchura*/
+  transition: 400ms;/* 400 milisegundos has la transicion*/
+  box-shadow: 10px 10px 30px #000000;/*derecha abajo opacidad*/
+}
+
+.imagenDiferencial:hover{/*al pasar el mouse por ensima*/
+  opacity: 0.3;/*que se opaque esta cantidad*/
+}
+
+.video{
+  width: 560px;
+  margin: 1em auto;/* automatico para los laterales*/
+}
+@media screen and(max-width:400px){/*acomodar todo para dispositivo movil*/
+  h1{
+    text-align: center;/*centramos el titulo*/
+  }
+  nav{
+    position: static;
+  }
+
+  .caja,.principal, .mapaContenido, .contenidoDiferenciales, .video {
+    width: auto;
+  }
+  .listaDiferenciales, .imagenDiferencial{
+    width: 100%;
+  }
+}

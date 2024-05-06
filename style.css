@@ -1,0 +1,136 @@
+/*body{
+    /*background-image: url(fondo.jpg);*/
+
+    
+    html, body, div, span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt,  u, i, center, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu { display: block; } body { line-height: 1; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; width: 100%; }
+span{
+    color: red;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+    display: flex;
+    background-color: rgb(223, 121, 11);
+    justify-content: space-evenly;
+    color: rgb(30, 4, 41);
+    
+}
+.nav2
+{
+    flex-direction: row;
+}
+.subindice{/* continuar*/
+   
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+    background-color: #cfc6c6;
+    /* padding: 10%; */
+    margin: 1%;
+    text-align: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+.nave{
+    background-color: rgb(50, 165, 136);
+    
+    font-size: 140%;
+    text-align: center;
+    color: currentcolor;
+    font-family: emoji;
+    text-decoration: none;
+    border: 1px  rgba(2, 20, 71, 0.946);
+
+}
+#color{
+    color: rgb(21, 21, 215);
+}
+#tamano{
+    font-size: 18px;
+}
+#fondo{
+    background-color: antiquewhite;
+}
+#espacio{
+    padding-left: 10px;
+}
+#estilo{
+    font-style: italic;
+}
+#margen{
+    margin-top: 8px;
+}
+#alinear {
+    text-align: center;
+}
+
+#ancho {
+    width: 93px;
+    background-color: aqua;
+}
+
+#alto {
+    background-color: rgb(255, 179, 0);
+    height: 26px;
+}
+
+#mayuscula {
+    text-transform: uppercase;
+}
+
+#inicial {
+    text-transform: capitalize;
+}
+
+#minuscula{
+    text-transform: lowercase;
+}
+#negrita{
+    font-weight: bold;
+}
+#decorativo1{
+    text-decoration: line-through;
+}
+#decorativo2{
+    text-decoration: overline;
+}
+#decorativo3{
+    text-decoration: underline;
+}
+.letrasPequenas{
+    font-size: 14px;
+}
+nav a:hover {
+    text-decoration: underline;
+
+}
+
+#hora{
+    background-color: aquamarine;
+}
+/*  // CONTINURA
+.zum{
+    cursor: zoom-in;
+  position: absolute;
+}
+.zum:hover {
+background-size: 120%;
+transform: scale(1.1);
+}*/
+@media (max-width: 360px){
+   
+  /*.tarjetas, .tarjetas-ataques        {
+    flex-direction: column;/*para que aparezca uno debajo del otro*/
+  
+img {
+  max-width: 100%;
+  height: auto;
+}
+nav
+{
+    flex-direction: column;
+}}

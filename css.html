@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Explicacion</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: linear-gradient(to left, #c0ffc882, #0095ff4d);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS</h1>
+    <nav>
+        <a class="nave" href="index.html" target="_blank">INDICE</a><br>
+        <a class="nave" href="html.html" target="_blank">HTML</a></li>
+        <a class="nave" href="js.html" target="_blank">JavaScript</a>
+        <a class="nave" href="git.html" target="_blank">Git y Github</a>
+
+
+    </nav>
+    <nav class="subindice">
+        
+            <a href="#etiquetas">Etiquetas</a>
+            <a href="#flex">Flexbox</a>
+            <a href="#trucos">Trucos</a>
+            <a href="#naveg">Navegador nav</a>
+            <a href="#reset">Reset</a>
+        
+    </nav>
+    <p><b>comentar </b> /* */</p>
+    <p><b>AGREGAR ARCHIVO CSS A HTML:</b><br>
+        En head la cabecera ponemos la etiqueta <b>link rel="stylesheet" href="style.css"</b> // Lo ideal es que el
+        primer archivo css se llame asi pero tambien puedes poner el nombre que desees
+    </p>
+    <p> En html podemos agregarles nombres a los elementos de forma de clase o id ejm: <br>
+        h1 <b>class</b>="titulo" y llamamos la clase con . / .titulo{color="red"} <br>
+        h2 <b>id</b>="subtitulo" y llamamos al id con # / #subtitulo{color="blue"} <br>
+    </p>
+    <p><b>NOTA :</b> Una <b>class</b> nos permite reutilizar ese estilo pero el <b>id</b> no. eje: <br>
+        class = div section <br>
+        id = imagen o elementro unico</p>
+
+    <hr>
+    
+    <p><b id="etiquetas">ETIQUETAS </b> que podemos usar una vez ya asignado class . o id#, deben estar dentro de la
+        etiqueta que posea
+        el elemento ejm h1 id="bla">Hola </p>
+    <ul>
+        <li id="todo">*{} .// Con el * agarramos TODO </li>
+        <li id="color"><b>color:</b> blue; ..= Color de letra</li>
+        <li id="tamano"><b>font-size:</b> 18px; ..= Tamaño de la letra</li>
+        <li id="fondo"><b>background-color</b>: antiquewhite; ..= Fondo de la letra</li>
+        <li id="espacio"><b>padding-left</b>: 10px; ./ Espacio que podemos agregar de cualquier direccion</li>
+        <li id="estilo"><b>font-style</b>: italic; ... / Estilo del texto</li>
+        <li id="margen"><b>margin-top</b>: 8px; ../ Margen que podemos hacer de cualquier direccion <br> si queremos
+            especificar cada direccion lo podemos hacer en la misma linea, margin= 1px 2px 3px 4px; ,,1=ariiba 2=
+            derecha 3= abajo 4=izquierda como un reloj</li>
+        <li id="alinear"><b>text-align</b>: center; ../ centrar texto </li>
+        <li id="ancho"><b>width</b>: 93px; ../ Ancho</li>
+        <li id="alto"><b>height</b>: 26px; .. // Alto</li>
+        <li id="mayuscula"><b>text-transform</b>: uppercase; ../ la letra se haga mayuscula</li>
+        <li id="inicial"><b>text-transform: capitalize;</b> ../ la primera letra de cada palabra se pone en mayuscula
+        </li>
+        <li id="minuscula"><b>text-transform: lowercase;</b> ../ Pone LAS LETRAS en minuscula</li>
+        <li id="negrita"> font-weight: bold; ../ Negrilla si en vez de bold ponemos numeros 700 aumentara su peso</li>
+        <li id="decorativo1">text-decoration: line-through; .. // Letra tachada</li>
+        <li id="decorativo2">text-decoration: overline; .. // Linea arriba</li>
+        <li id="decorativo3">text-decoration: underline; .. // linea abajo</li><br>
+        <li id="imagen">background-image: url(fondo.jpg); ..// <b><span>Insertar imagen</b></span>, en fondo va el
+            nombre del archivo <br>
+            <b>Evitar que se repite la imagen:</b> asi background-repeat: no-repeat;<br>
+            <b>posicion de imagen </b> background-position:right center; ./ podemos posicionar asi o con numeros ejm
+            20px 30px<br>
+            <b>background-size: cover;</b> Cambia el tamaño de la imagen de fondo para que cubra todo el espacio de
+            fondo de la etiqueta sin importar el ancho de la etiqueta. Si la imagen es demasiado grande y tiene una
+            relación mayor con respecto a la etiqueta en la que se encuentra, esto significa que la imagen se estirará
+            y, por lo tanto, se recortará en sus bordes. <br>
+            <b>background-size: contain;</b> Contiene la imagen, como sugiere el nombre. Se asegurará de que toda la
+            imagen se muestre en el fondo sin recortar nada. Si la imagen es mucho más pequeña que la etiqueta, quedará
+            un espacio vacío que hará que se repita para llenarlo, por lo que podemos usar background-repeat: no-repeat;
+            regla que mencionamos anteriormente. <br>
+            <b>background-size:cover;</b> En este caso se recortarán partes de la imagen. <br>
+            <b>background-size:contain;</b> La imagen se encoge para ajustarse a la etiqueta section. <br>
+            <b>background-image: linear-gradient</b>(to left,pink,orange); .// Fondo en degrade, podemos elegir dos
+            colores o legir los colores y desde que direccion <br>
+        </li>
+    </ul>
+    <hr>
+    <span>ALINEAR SOLO TEXTO</span> podemos hacerlo solo con text-align: right;
+    <p>Para que el flexbox funcione debemos colocar <b>display=flex</b></p>
+    <img id="flex" src="imagenes/flexbox.jpg" alt="imagenFlexbox">
+    <hr>
+    <img src="imagenes/margen.jpg" alt="margen">
+    <hr>
+    <p id="naveg"><b>Navegador nav</b>
+    <p>
+    <ol>
+        <li> ponemos nav</li>
+        <li>colocamos el ul o li</li>
+    </ol>
+    <p><b>Horizontalmente</b> en css ponemos nav li <b>display: inline</b><br>
+        <b>quitar estilo de lista</b> nav ul  list-style:none<br>
+        <b>Poner cursor encima y salga una linea debajo de las letras</b>nav a:hover  text-decoration: underline;<br> <br>
+        <b>Horizontal sin lista</b> nav o # o . si es class o id{display: flex;
+            justify-content: space-evenly;} 
+
+    </p>
+    </p>
+    </p>
+    <hr>
+    <b id="trucos">TRUCOS</b><br>
+    <ul>
+        <li>#ffffff en Google nos muestra <b>paleta de colores</b> <a class="links"
+                href="https://www.google.com/search?q=%23ffffff&rlz=1C1CHBF_esEC825EC825&oq=%23ffffff&aqs=chrome..69i57.2396j0j7&sourceid=chrome&ie=UTF-8"
+                target="_blank">Aplasta aqui</a></li>
+        <li><b>simbolos especiales </b> en esta pagina <a href="https://ascii.cl/es/codigos-html.htm">aqui</a></li>
+    </ul>
+    <hr>
+    
+    </p>
+    <hr>
+    <p><b id="reset">Quitar parametros por defecto que tiene los navegadores: </b>Crea un archivo reset copiar, pegar y
+        dar formato
+        a lo siguiente <br>
+    <p id="reset" translate="no">html, body, span, applet, object, iframe, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em,  ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        fieldset, form, label, legend,
+         caption, tbody, tfoot, thead,
+         aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+        display: block;
+        }
+        body {
+        line-height: 1;
+        }
+        ol, ul {
+        list-style: none;
+        }
+        blockquote, q {
+        quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+        content: '';
+        content: none;
+        }
+        table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        }</p>
+    </p>
+</body>
+</html>

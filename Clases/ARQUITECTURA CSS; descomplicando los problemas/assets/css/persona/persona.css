@@ -1,0 +1,14 @@
+.persona{
+    display: flex;
+    flex-direction: column;/*para que todo el contenido de esta div este en columna*/
+}
+@media (min-width:0) {
+    .persona{
+    margin-bottom: 2rem;
+    }
+}
+@media (min-width:768px) {
+    .persona{
+        margin-bottom: 0;
+    }
+}

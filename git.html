@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: linear-gradient(to left,#8b01016c,#ffe5e58f);
+             
+        } 
+        img{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>GIT Y GITHUB</h1>
+    <nav>
+        <a class="nave" href="index.html" target="_blank">INDICE</a>
+        <a class="nave" href="css.html" target="_blank">CSS</a>
+        <a class="nave" href="js.html" target="_blank">JavaScript</a>
+        <a class="nave" href="html.html" target="_blank">Html</a>
+
+    </nav>
+<p>
+    <ol>
+        <li><b>git init</b>: Con este comando indicamos que el directorio donde nos encontramos comenzara a ser versionado bajo GIT </li>
+        <li><b>git status</b>: Con este comando veremos el estado actual de nuestra carpeta versionada, asi como archivos que no estan versionados, archivo modificados, archivos eliminados etc., comoveras este comando sera de gran ayuda de ahora en adelante. Los mensajes que podremos ver con este comando puede ser los siguientes <br> <span>Untracked files</span>: Nos mostrara todos los archivos que no han sido agregados al respositorio aun. <br> <span>Changes to be committed</span>: Noa indica que archivos seran agregados a nuestro commit </li>
+        <li><b>git add</b>: Este comando nos ayuda agregar a nuestros archivos que no esta bajo versionamiento (los Untracked files que vimos anteriormente)</li>
+        <li><b>git commit -m</b> "mensaje"; Este comando es muy importante ya que es el que da comienzo al seguimiento de nuestros archivos que hayamos agregado con el comando (git add), como podemos ver con el parametro -m le indicamos un mensaje, el cual debe describir en pocas palabras la razon del commit</li>
+        <li><b>git remote add origin</b>: url_del_repositorio; Como si fuera poco, hasta ahora todos nuestros comandos vistos (1 al 4) has sidopuro trabajo local, con el comando git remote add agregamos nuestro repositorio a un servidor remoto,y como lo hacemos bueno debemos de tener ya creado nuestro repositorio git en un servidor y este nos brinda una url ejemplo   git@github.com:viviraprenderweb/git_training.git</li>
+        <li><b>git push -u origin master</b>: Con este comando empujamos todo lo que tengamos en nuestro commits al repositorio remoto, para este caso a: git@github.com:viviraprenderweb/git_training.git   Con este comando tenemos que tener una cuenta que nuestra llave publica debe de estar agregada en el servidor remoto. </li>
+        <li><b>git pull</b>: Este comando nos baja los cambios que haya trabajado otra persona en el mismo repositorio, es recomenable siempre que trabajemos un repositorio que no hayamos iniciando nosotros hacer siempre un git pull primero antes de comenzar a trabajar en los archivos. <br> Como vemos en la imagen se habia agregado el archivo README.md, por lo tanto este fue bajado a nuestra version local del repositorio</li>
+        <li><b>git remote -v</b>: Con este comando podemos ver la url remota del repositorio en el que nos encontramos</li>
+        <li><b>git clone</b> url_del_repositorio nombre _local ; Si queremos hacer una copia en nuestro directorio local de un repositorio existente usaremos este comando como lo mostramos acontinuacion:</li>
+        <li><b>git branch -all</b> En git se trabaja con branch (ramas en español), originalmente se crea la master por defecto, a la raiz de esto nosotros podemos crear nuestas propias branch, siendo claro una copia de la master en primnera instancia, dicho esto con el comando git branch -all podemos ver todas las ramas que tenga el proyecto</li>
+    </ol>
+</p>
+    <img class="zum" src="imagenes/git.png" alt="comandos de git">
+    <img src="imagenes/git1.jpg" alt="primeros pasos para subir a repositorio">
+    <img src="imagenes/git2.jpg" alt="segundos pasos para subir a repositorio">
+    <img src="imagenes/git3.png" alt="tercer paso git">
+    <img src="imagenes/proyecto.jpg" alt="proyectos de git">
+    <img src="imagenes/terminos.jpg" alt="terminos de git">
+    <img src="imagenes/equipo.jpg" alt="hacer equipo en git">
+
+    <p>video de como subir al git <a href="https://www.youtube.com/watch?v=mq-CDUwHe8Y"> video</a> </p>
+
+
+</body>
+</html>

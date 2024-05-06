@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es"><!-- aclaramos que este en español -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title><!--titulo que aparece en la barra-->
+    <style>
+        header{
+            background-color: antiquewhite;
+        }
+        span{
+            color: blue;
+           font-family: cursive;
+        }
+        th,tr,td{
+            
+            border: 1px solid black;
+        }
+        td {
+            justify-content: center;
+        }
+    </style><!-- si queremes que varias tengan lo mismo colocams las etiquetas separadas por comas-->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: linear-gradient(to left, #86c57653,#c7070729);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML</h1>
+    <nav>
+        <a class="nave" href="index.html" target="_blank">INDICE</a>
+        <a class="nave" href="css.html" target="_blank">CSS</a>
+        <a class="nave" href="js.html" target="_blank">JavaScript</a>
+        <a class="nave" href="git.html" target="_blank">Git y Github</a>
+
+        
+    </nav>
+    <nav class="subindice">
+            <a href="#botones">Botones</a>
+            <a href="#listas">Listas</a>
+            <a href="#tablas">Tablas</a>
+            <a href="#blogss">Blog</a>
+            <a href="#tipss">Tips</a>
+        
+    </nav>
+    <header>
+        <h1>Header/Cabecera =  header /header</h1>
+        <h2>Estos textos son realizados con h1 y h2</h2>
+        <p>En <b>head</b> lo no visible va link para unir css, va la descripcion como lo encontrara el navegador, el titulo de la pestaña y palabras claves keywords</p>
+        
+    </header>
+      Atajo de html : escribir html5 y seleccionar <br>
+    <b>html lang</b> es el idioma en=ingles es=español<br>
+    <b>meta charset="UTF-8"</b> Para que aparezcan las caracteristicas de las letras, tildes ñ etc<br>
+    <b>meta viewport</b> controla el ancho de la página dependiendo del dispositivo en el que se encuentre el usuario.<br>
+    <b>title</b> Titulo de la pagina que aparece en la pestaña <br>
+
+
+
+
+    <!---->  Comentar !-- -- con las flechas a los lados
+    <p>Esto es un parrafo = <b>p</b> (va al inicio y final)<br>
+        para separar las lineas podemos agregar otra p o br/ <br>
+        <b>Negrilla</b> la palabra en la mitad: b>palabra/b> <b>b</b> las etiquetas no deben utilizarse en los títulos y subtítulos, mientras que las etiquetas <strong>strong </strong> sí.<br>
+        <b>br</b> = salto de linea <br>
+        Etiqueta span para identificar o colorear algunas paralabras span><span>(las colocamos en medio de span)</span>
+        /span. si queremos modificarla directamente ponemos span style color="blue" o le modificamos internamente como queramos <br>
+        <b>Lorem</b> Lorem ipsum dolor sit. // Escribimos lorem4 o el numero de palabras que queramos <br> 
+         Etiqueta <b>em</b> para letra inclinada <em>italica</em>
+
+        <hr> <b>hr</b> linea horizontal <br>
+    </p><!--podemos colocar style dentro del span y colocamos color-->
+    Etiqueta <b>a / links</b><br>
+    a href = "link">mi github /a> (al dar click de una cambia a esa pagina)
+    <a class="links" href="https://github.com/AngieGal">Mi Github </a><br>
+    para que se abra en otra <b>pestaña</b> ponemos a <b>target="_blank"</b> href="link"<br>
+    <a target="_blank" href="https://github.com/AngieGal">Mi link en otra pestaña</a>
+    </p>
+    <p>etiqueta para correos address <address>holi@hotmail.com</address> </p>
+    
+    <span><b>Imagenes</b></span> img src="nombre.png" /> o podemos ponerlo con direccion url, alt es descripcion de la imagen para ciegos y cuando la imagen no cargue salga la descripcion
+    <img src="imagenes/mosca.jpg" alt="" width="100"> <br>
+    podemos colocar un ancho dentro de img width="400" (ancho o height alto) y todo el tamaño se modificara <br><br>
+    <hr>
+    
+    <span><b id="botones">Formato BOTONES</b> todo esta dentro de form<br></span>
+    <h6>es importante que cada etiqueta tenga la propiedad de name=nombre <br> cada una este identificada, tambien tenemos
+        que darle un valor por defecto value="", menos en textarea </h6>
+    <form action="/formulario" method="post">
+        <!-- action= ruta dentro de un servidor, de momento ponemos /formulario  ...  metodo de enviar get o post-->
+        Input / caja de texto <input type="text"> solo si tocas la caja entra ahi // input type="text"<br>
+        <label for="algo"><b></b>Click</label> <input id="algo" type="text" name="nombre"> aplastar en click o la caja y se
+        metera en la caja // <b>label</b> for="algo">Click /label> <b>input</b> id="algo" type="text" name="nombre" REP
+        asociamos el label con for y el mismo debe estar en el id del input
+        <!--el nombre es el valor que le damos al servidor como contrase;a etc, se debe declarar--> <br>
+        <label for="texto"> Texto</label> <input id="texto" placeholder="ingrese un texto aqui" type="text"> texto dentro de
+        la caja // input id="texto" <b>placeholder</b>="ingrese un texto aqui"<br>
+        <b>Tipos de input o botones</b> si no se le define, por inersia sera de texto <br>
+        <input type="text"> texto //input type="text" <br>
+        <input type="submit"> enviar // type="submit" . <input type="week"> semana // week<br>
+        <input type="email"> correo // email ... te exigira un @ <br>
+        <input type="password"> contraseña // password .. se haran puntos cuando escribas <br>
+        <input type="radio" name="ola"> boton redondo // radio
+        <input type="radio" name="ola"> boton redondo // radio
+        <input type="checkbox"> boton de chulito // checkbox <br>
+        <b style="color: brown;">si queremos que solo uno sea elejido debemos colocarle a los input el mismo name</b><br>
+        <input type="file"> subir archivo // file <br>
+        <input type="date"> fecha // date . <input type="time"> hora // time<br>
+        <input type="button"> boton // button . <button>oli</button> button>oli/button .
+        <input type="color">caja para elejir un color // type=color <br>
+        <input type="datetime-local"> fecha, hora y calendario para seleccionar // datetime-local <br>
+        <input type="month"> mes, año y calendario // month <br>
+        <input type="number"> numero // number . .
+        <input type="range"> rango // range <br>
+        <input type="reset"> restablecer // reset <br>
+        <input type="search"> muestra de tela // search .. aparece una X para borrar todo lo que escribas <br> <br>
+        <textarea name="comentatio" placeholder="escribe un comentario" id="" cols="30" rows="10"></textarea> caja de texto
+        // textarea .. textarea name="comentatio" placeholder="escribe un comentario" id="" cols="30" rows="10" <br>
+        <button type="button"><img src="imagenes/mosca.jpg" alt="" width="50">see</button> Este es un boton con una imagen // button
+        type="button">img src="mosca.jpg" alt="" width="50">see<br>
+        <b style="color: rgb(163, 28, 18);">REQUERIDO O OBLIGATORIO</b> dentro del input ponemos <b>required</b><br>
+        <b>RESET SUBMIT y MENU ES PREFERIBLE CON BUTTON Y NO CON INPUT</b> <br> <br> <br>
+        <hr>
+    
+    
+        <span><b id="listas">LISTAS</b></span> <br>
+        ul = lista no ordenada <br>
+        li = item de la lista, . osea li va dentro de ul <br>
+        emmet ul>li*3 se creara la lista con 3 items li
+        <ul>creamos una lista con ul / puntos
+            <li>y cada item con li</li>
+            <li></li>
+            <li></li>
+        </ul>
+        ol = lista ordenada
+        <ol> creamos la lista con ol
+            <li>y cada item con li</li>
+            <li></li>
+            <li></li>
+        </ol>
+        Para que la lista ordenada comience desde un numero debemos darle un valor, value
+        <ol>
+            <li value="57"> li value="57"</li>
+            <li></li>
+            <li>
+                <ol>
+                    <li>creamos utra lista ordenada dentro de la lista= ol, li</li>
+                    <li style="list-style-type: lower-alpha;">letras // li style="list-style-type: lower-alpha;"</li>
+                    <li style="list-style-type: lower-roman;">numeros Romanos // li style="list-style-type: lower-roman;
+                    </li>
+                    <li style="list-style-type: circle;">circulos // li style="list-style-type: circle;</li>
+                    <li style="list-style-type: disc;">circulos negros // li style="list-style-type: disc;</li>
+                    <li style="list-style-type: disclosure-closed;">flechas negras // li style="list-style-type:
+                        disclosure-closed;</li>
+                    <li style="list-style-type: lower-greek;">alfabeto griego // li style="list-style-type: lower-greek;
+                    </li>
+                    <li style="list-style-type: disclosure-open;">flechas abajo // li style="list-style-type:
+                        disclosure-open;</li>
+                    <li style="list-style-type: square;">cuadro // li style="list-style-type: square;;</li>
+                </ol>
+            </li>
+        </ol>
+        <b>Orden de texto indice y subindice</b><br>
+        <p>Con en la lista va primero dl despues dt como el titulo y dd como contenido</p>
+        <dl>
+            <dt>equipo 1</dt>
+            <dd>es morado</dd>
+        </dl>
+    </form><br>
+    <hr>
+    <span><b id="tablas">TABLAS</b></span> <br>
+    escribimos <b>table</b> y a continuacion todo dentro de ella <br>
+    <b>tr</b> Filas <b>thead</b> es la cabecera
+    <b>th</b> lo que dira dentro de la cabecera <br>
+    por cada uno debe estar th nombre, th Apellido th ciudad/ solito sale en negrilla <br>
+    <b>tbody</b> para agrupar todo el contenido de la tabla
+    <b>td</b> con lo que llenamos las celdas de la fila, el cuerpo <br>
+    a la tabla le agregamos style="border: 1px solid black" // <b>agregamos un borde</b> o lo hacemos en el head style tr,
+    th,td y el borde de hara en todas <br>
+    a esta tabla le ponemos un ancho //table style="width: 500px;" <br>
+    y al final tambien le ponemos un tfoot un folter
+    <table style="width: 70%;">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ana</td>
+                <td>amado</td>
+                <td>armenia</td>
+            </tr>
+            <tr>
+                <td>bryan</td>
+                <td>ballesteros</td>
+                <td>bogota</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>ana y bryan</td>
+            <td>amado y ballesteros</td>
+            <td>armenia y bogota</td>
+        </tfoot>
+    </table>
+    <hr>
+    
+    <b><span id="blogss">BLOG</span></b><br>
+    Dentro del body <b>header</b> se utiliza para agrupar links, alguna imagen o logo, puedes colocar las que quieras pero
+    <br>nunca una dentro de otra, y no podemos poner una dentro de foter <br>
+    <b>section</b> definir secciones <br>
+    <b>NAVEGACION nav</b> <br>
+    Para crear una navegacion colocamos la etiqueta nav> dentro de ella una lista (ul, li) y en cada una ponemos un a>inicio dentro del a ponemos el archivo html de la otra pagina o su direccion <br>
+si queremos <b>navegar en la pagina existente</b> debemos colocarle un id a la seccion que queremos ejm  id="mapa" y en la lista del nav dentro del a en href ponemos #mapa>mapa a> de esta forma saltara a esa seccion <br>
+<b>mas informacion en </b> <a href="css.html"> CSS</a></p>
+    
+    Dentro del header ponemos > h1> Nombre del blog> <br>
+    Dentro de section ponemos <b>article</b> / articulos donde podemos colocar una imegen, descripcion y toda la informacion
+    del articulo <br>
+    Dentro de article > h2 para el titulo > p para descripcion > img src="imagen.png" width ="400"> p descripcion
+    <b>footer</b> es el pie de pagina, como copyride, informacion del sitio, links para volver al inicio, <br>y informacion
+    relacionada con el autor <br>
+    
+    <header>
+        <h1>Nombre del blog</h1>
+    </header>
+    <section>
+        <article>
+            <h2>Titulo del post</h2>
+            <p>Descripcion del post</p>
+            <img src="imagenes/mosca.jpg" alt="mosca voland">
+        </article>
+    </section>
+    <section id="tipss">
+        <article>
+            <p><b>Traducir: </b> Si queremos que algo no se traduzca, dentro de la etiqueta que posea nuestro contenido
+                colocamos translate="no"</p>
+        </article>
+        <article>
+            <p><b>simbolos especiales </b> en esta pagina <a href="https://ascii.cl/es/codigos-html.htm">aqui</a></p>
+        </article>
+    </section>
+    <hr>
+    <p><b>Crear Espacio </b><br>
+        canvas width="300" height="300" id="area_de_dibujo">/canvas> <br> En html creamos un espacio con la etiqueta canvas,
+        le asignamos un ancho, un alto y un identificador
+        <hr>
+    <footer>
+        <p>Para crear el estilo de una pagina podemos hacerlo directamente en html de la siguiente forma:<br>
+            Dentro del head ponemos la etiqueta style colocamos el bloque que queremos modificar ejem : <br>
+            .......body {color:blue;} o si le asignamos una clase/ class = . o identificador/ id= # <br>
+            El html se satura mucho lo ideal es hacer un archivo css que se encargue de lo visual. <br>
+        si queremos escribir codigo ponemos todo en medio de <code>code</code> </p>
+        
+            <p><b style="color: red;">html ver <a href="https://www.websiterating.com/es/resources/html-css-php-cheat-sheet/">aqui</a></b></p>
+    </footer>
+    
+    
+    </body>
+    
+    </html>
