@@ -1,0 +1,10 @@
+@media (min-width:0) {
+    .logo {
+        display: none;
+    }
+}
+@media  (min-width:768px) {
+    .logo {
+        display: block;/*parq que aparezca el logo */
+    }
+}
